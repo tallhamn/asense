@@ -1,0 +1,12 @@
+name = "asense-worker"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+workers_dev = true
+
+routes = [
+	{ pattern = "sense.momstudios.com/*", zone_name = "momstudios.com" }
+]
+
+[[r2_buckets]]
+binding = "TELEMETRY"
+bucket_name = "sense-telemetry"

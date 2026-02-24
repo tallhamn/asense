@@ -1,0 +1,19 @@
+{
+  "name": "asense",
+  "version": "0.1.0",
+  "description": "Physical context for your AI agent via iPhone sensor telemetry",
+  "type": "module",
+  "bin": {
+    "asense": "./bin/asense"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "keywords": ["openclaw", "sensors", "context", "telemetry"],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^22.0.0"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.claude/
+.wrangler/
+*.xcuserdata
+xcuserdata/
+DerivedData/
+.build/
+.DS_Store

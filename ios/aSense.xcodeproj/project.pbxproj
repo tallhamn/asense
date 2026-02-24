@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00001000000000000000000 /* aSenseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00001000000000000000000 /* aSenseApp.swift */; };
+		A00002000000000000000000 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00002000000000000000000 /* ContentView.swift */; };
+		A00003000000000000000000 /* SensorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00003000000000000000000 /* SensorType.swift */; };
+		A00004000000000000000000 /* SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00004000000000000000000 /* SensorData.swift */; };
+		A00005000000000000000000 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00005000000000000000000 /* KeychainService.swift */; };
+		A00006000000000000000000 /* EncryptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00006000000000000000000 /* EncryptionService.swift */; };
+		A00007000000000000000000 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00007000000000000000000 /* LocationService.swift */; };
+		A00008000000000000000000 /* MotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00008000000000000000000 /* MotionService.swift */; };
+		A00009000000000000000000 /* BluetoothService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00009000000000000000000 /* BluetoothService.swift */; };
+		A00010000000000000000000 /* BufferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00010000000000000000000 /* BufferService.swift */; };
+		A00011000000000000000000 /* TelemetryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00011000000000000000000 /* TelemetryService.swift */; };
+		A00012000000000000000000 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00012000000000000000000 /* DashboardViewModel.swift */; };
+		A00013000000000000000000 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00013000000000000000000 /* SettingsViewModel.swift */; };
+		A00014000000000000000000 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00014000000000000000000 /* DashboardView.swift */; };
+		A00015000000000000000000 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00015000000000000000000 /* SettingsView.swift */; };
+		A00016000000000000000000 /* SensorToggleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00016000000000000000000 /* SensorToggleRow.swift */; };
+		A00017000000000000000000 /* FrequencySliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00017000000000000000000 /* FrequencySliderView.swift */; };
+		A00018000000000000000000 /* KeyExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00018000000000000000000 /* KeyExportView.swift */; };
+		A00019000000000000000000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00021000000000000000000 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B00001000000000000000000 /* aSenseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aSenseApp.swift; sourceTree = "<group>"; };
+		B00002000000000000000000 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B00003000000000000000000 /* SensorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorType.swift; sourceTree = "<group>"; };
+		B00004000000000000000000 /* SensorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorData.swift; sourceTree = "<group>"; };
+		B00005000000000000000000 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		B00006000000000000000000 /* EncryptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionService.swift; sourceTree = "<group>"; };
+		B00007000000000000000000 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		B00008000000000000000000 /* MotionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionService.swift; sourceTree = "<group>"; };
+		B00009000000000000000000 /* BluetoothService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothService.swift; sourceTree = "<group>"; };
+		B00010000000000000000000 /* BufferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BufferService.swift; sourceTree = "<group>"; };
+		B00011000000000000000000 /* TelemetryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelemetryService.swift; sourceTree = "<group>"; };
+		B00012000000000000000000 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		B00013000000000000000000 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		B00014000000000000000000 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		B00015000000000000000000 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B00016000000000000000000 /* SensorToggleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorToggleRow.swift; sourceTree = "<group>"; };
+		B00017000000000000000000 /* FrequencySliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencySliderView.swift; sourceTree = "<group>"; };
+		B00018000000000000000000 /* KeyExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyExportView.swift; sourceTree = "<group>"; };
+		B00019000000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B00020000000000000000000 /* aSense.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = aSense.entitlements; sourceTree = "<group>"; };
+		B00021000000000000000000 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B00022000000000000000000 /* aSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aSense.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D00004000000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C00001000000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				C00002000000000000000000 /* aSense */,
+				C00007000000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C00002000000000000000000 /* aSense */ = {
+			isa = PBXGroup;
+			children = (
+				B00001000000000000000000 /* aSenseApp.swift */,
+				B00002000000000000000000 /* ContentView.swift */,
+				C00003000000000000000000 /* Models */,
+				C00004000000000000000000 /* Services */,
+				C00005000000000000000000 /* ViewModels */,
+				C00006000000000000000000 /* Views */,
+				B00021000000000000000000 /* Assets.xcassets */,
+				B00019000000000000000000 /* Info.plist */,
+				B00020000000000000000000 /* aSense.entitlements */,
+			);
+			path = aSense;
+			sourceTree = "<group>";
+		};
+		C00003000000000000000000 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B00003000000000000000000 /* SensorType.swift */,
+				B00004000000000000000000 /* SensorData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C00004000000000000000000 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B00005000000000000000000 /* KeychainService.swift */,
+				B00006000000000000000000 /* EncryptionService.swift */,
+				B00007000000000000000000 /* LocationService.swift */,
+				B00008000000000000000000 /* MotionService.swift */,
+				B00009000000000000000000 /* BluetoothService.swift */,
+				B00010000000000000000000 /* BufferService.swift */,
+				B00011000000000000000000 /* TelemetryService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C00005000000000000000000 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B00012000000000000000000 /* DashboardViewModel.swift */,
+				B00013000000000000000000 /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C00006000000000000000000 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B00014000000000000000000 /* DashboardView.swift */,
+				B00015000000000000000000 /* SettingsView.swift */,
+				B00016000000000000000000 /* SensorToggleRow.swift */,
+				B00017000000000000000000 /* FrequencySliderView.swift */,
+				B00018000000000000000000 /* KeyExportView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C00007000000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B00022000000000000000000 /* aSense.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D00001000000000000000000 /* aSense */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F00001000000000000000000 /* Build configuration list for PBXNativeTarget "aSense" */;
+			buildPhases = (
+				D00003000000000000000000 /* Sources */,
+				D00004000000000000000000 /* Frameworks */,
+				D00005000000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = aSense;
+			productName = aSense;
+			productReference = B00022000000000000000000 /* aSense.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D00002000000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					D00001000000000000000000 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = F00002000000000000000000 /* Build configuration list for PBXProject "aSense" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C00001000000000000000000;
+			productRefGroup = C00007000000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D00001000000000000000000 /* aSense */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D00005000000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00019000000000000000000 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D00003000000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00001000000000000000000 /* aSenseApp.swift in Sources */,
+				A00002000000000000000000 /* ContentView.swift in Sources */,
+				A00003000000000000000000 /* SensorType.swift in Sources */,
+				A00004000000000000000000 /* SensorData.swift in Sources */,
+				A00005000000000000000000 /* KeychainService.swift in Sources */,
+				A00006000000000000000000 /* EncryptionService.swift in Sources */,
+				A00007000000000000000000 /* LocationService.swift in Sources */,
+				A00008000000000000000000 /* MotionService.swift in Sources */,
+				A00009000000000000000000 /* BluetoothService.swift in Sources */,
+				A00010000000000000000000 /* BufferService.swift in Sources */,
+				A00011000000000000000000 /* TelemetryService.swift in Sources */,
+				A00012000000000000000000 /* DashboardViewModel.swift in Sources */,
+				A00013000000000000000000 /* SettingsViewModel.swift in Sources */,
+				A00014000000000000000000 /* DashboardView.swift in Sources */,
+				A00015000000000000000000 /* SettingsView.swift in Sources */,
+				A00016000000000000000000 /* SensorToggleRow.swift in Sources */,
+				A00017000000000000000000 /* FrequencySliderView.swift in Sources */,
+				A00018000000000000000000 /* KeyExportView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E00001000000000000000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = aSense/aSense.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = aSense/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.momstudios.asense;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E00002000000000000000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = aSense/aSense.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = aSense/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.momstudios.asense;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E00003000000000000000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E00004000000000000000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F00001000000000000000000 /* Build configuration list for PBXNativeTarget "aSense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00001000000000000000000 /* Debug */,
+				E00002000000000000000000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F00002000000000000000000 /* Build configuration list for PBXProject "aSense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00003000000000000000000 /* Debug */,
+				E00004000000000000000000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D00002000000000000000000 /* Project object */;
+}
