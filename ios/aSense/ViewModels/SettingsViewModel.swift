@@ -15,7 +15,10 @@ final class SettingsViewModel {
 
     var apiToken: String {
         get { KeychainService.shared.apiToken ?? "" }
-        set { KeychainService.shared.apiToken = newValue.isEmpty ? nil : newValue }
+        set {
+            let trimmed = newValue.trimmingCharacters(in: .whitespacesAndNewlines)
+            KeychainService.shared.apiToken = trimmed.isEmpty ? nil : trimmed
+        }
     }
 
     var transmissionInterval: TimeInterval {

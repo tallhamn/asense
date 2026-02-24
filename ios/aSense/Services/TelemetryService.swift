@@ -161,9 +161,14 @@ final class TelemetryService {
         request.httpBody = encrypted
 
         do {
-            let (_, response) = try await URLSession.shared.data(for: request)
+            let (data, response) = try await URLSession.shared.data(for: request)
             guard let http = response as? HTTPURLResponse else { return false }
-            return http.statusCode == 201
+            if http.statusCode != 201 {
+                let body = String(data: data, encoding: .utf8) ?? ""
+                lastError = "HTTP \(http.statusCode): \(body)"
+                return false
+            }
+            return true
         } catch {
             lastError = error.localizedDescription
             return false
