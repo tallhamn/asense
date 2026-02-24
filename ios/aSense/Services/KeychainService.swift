@@ -53,15 +53,17 @@ final class KeychainService {
     // MARK: - Keychain helpers
 
     private func save(data: Data, account: String) {
-        let query: [String: Any] = [
+        let searchQuery: [String: Any] = [
             kSecClass as String:       kSecClassGenericPassword,
             kSecAttrService as String: service,
             kSecAttrAccount as String: account,
-            kSecValueData as String:   data,
-            kSecAttrAccessible as String: kSecAttrAccessibleAfterFirstUnlock,
         ]
-        SecItemDelete(query as CFDictionary)
-        SecItemAdd(query as CFDictionary, nil)
+        SecItemDelete(searchQuery as CFDictionary)
+
+        var addQuery = searchQuery
+        addQuery[kSecValueData as String] = data
+        addQuery[kSecAttrAccessible as String] = kSecAttrAccessibleAfterFirstUnlock
+        SecItemAdd(addQuery as CFDictionary, nil)
     }
 
     private func loadData(account: String) -> Data? {
