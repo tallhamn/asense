@@ -10,6 +10,9 @@
     "build": "tsc",
     "dev": "tsc --watch"
   },
+  "openclaw": {
+    "extensions": ["./openclaw.plugin.json"]
+  },
   "keywords": ["openclaw", "sensors", "context", "telemetry"],
   "license": "MIT",
   "devDependencies": {
