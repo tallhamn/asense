@@ -39,15 +39,8 @@ final class KeychainService {
     }
 
     var apiToken: String? {
-        get {
-            guard let data = loadData(account: apiTokenAccount) else { return nil }
-            return String(data: data, encoding: .utf8)
-        }
-        set {
-            if let value = newValue {
-                save(data: Data(value.utf8), account: apiTokenAccount)
-            }
-        }
+        get { UserDefaults.standard.string(forKey: "apiToken") }
+        set { UserDefaults.standard.set(newValue, forKey: "apiToken") }
     }
 
     // MARK: - Keychain helpers
