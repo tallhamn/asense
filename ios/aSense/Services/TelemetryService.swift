@@ -23,7 +23,7 @@ final class TelemetryService {
     var bufferedCount: Int { BufferService.shared.count }
 
     private var transmitTask: Task<Void, Never>?
-    private let endpoint = URL(string: "https://sense.momstudios.com/api/telemetry")!
+    private let endpoint = URL(string: "https://asense-worker.momstudios.workers.dev/api/telemetry")!
 
     init() {
         // Load persisted settings
